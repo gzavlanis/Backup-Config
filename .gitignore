@@ -1,6 +1,8 @@
 params
 backups
 .venv
+.idea
 build
 dist
 backup_config.exe
+backerman.log
