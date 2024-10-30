@@ -6,3 +6,4 @@ build
 dist
 backup_config.exe
 backerman.log
+backup_config.spec
