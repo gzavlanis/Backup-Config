@@ -15,11 +15,17 @@ class Config:
         if self.isDict:
             encrypted = encrypt(self.params, self.key, self.iv)
             writeFile(self.paramsFile, encrypted)
+            return self.params
         else:
             encrypted = toBytes(self.params)
-            return decrypt(encrypted, self.key, self.iv)
+            self.params = decrypt(encrypted, self.key, self.iv)
 
     def getDBConfig(self):
-        params = toJson(self.handleParamsFile())
-        db = params['db']
+        self.handleParamsFile()
+        self.params = toJson(self.params)
+        db = self.params['db']
         return db['host'], db['port'], db['user'], db['password'], db['database']
+
+    def getSFTPConfig(self):
+        sftp = self.params['sftp']
+        return sftp['hostname'], sftp['username'], sftp['password']

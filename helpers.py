@@ -1,4 +1,4 @@
-import json, binascii
+import json, binascii, logging, os
 from Crypto.Cipher import AES
 from Crypto.Util.Padding import pad, unpad
 
@@ -33,3 +33,17 @@ def decrypt(encryptedText, key, iv):
     cipher = AES.new(key, AES.MODE_CBC, iv)
     decrypted = unpad(cipher.decrypt(encryptedText), AES.block_size)
     return decrypted.decode()
+
+def deleteLogs():
+    log_path = './backerman.log'
+    if os.path.exists(log_path):
+        os.remove(log_path)
+
+def createLog():
+    logging.basicConfig(
+        filename = 'backerman.log',
+        level = logging.INFO,
+        format = '%(asctime)s - %(levelname)s - %(message)s',
+        datefmt = '%Y-%m-%d %H:%M:%S'
+    )
+    return logging.getLogger()

@@ -1,1 +1,14 @@
-8e247193fb6ee3b55297ccd99a48580c0711b49141836085e8f83fb826e9c092613fd56377aa24d733afce872595523629b1e0fffe70dd54338b9b2000830974be6e3cacf53b2bad326c3fb5ed014373d18019c89eb1f4d83d4ecba1d7ab619301bd80dc8eb6469cef05284e449ddcbe598476d258da4418283d71589ab6b4960e84eac05085c19f9ecf63cd769e3a7e3052c61359f50744789605c13ece24efdb52ce4c906654d59430b0dca45d912e
+{
+	"db": {
+		"host": "127.0.0.1",
+		"port": 3306,
+		"user": "wpos_user",
+		"password": "wpos_pass",
+		"database": "wpos"
+	},
+	"sftp": {
+        "hostname": "u430160.your-storagebox.de",
+        "username": "u430160-sub1",
+        "password": "fXQhMnYeatbUSxdG"
+	}
+}
