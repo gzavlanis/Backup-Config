@@ -1,8 +1,0 @@
-2024-10-30 17:26:21 - INFO - Command output: None
-2024-10-30 17:26:21 - INFO - Database backup saved to ./backups/backup_20241030_1726.sql
-2024-10-30 17:26:21 - INFO - Connected (version 2.0, client mod_sftp)
-2024-10-30 17:26:22 - INFO - Authentication (password) successful!
-2024-10-30 17:26:22 - INFO - Connection successfully established.
-2024-10-30 17:26:22 - INFO - [chan 0] Opened sftp connection (server version 3)
-2024-10-30 17:26:24 - INFO - File ./backups/backup_20241030_1726.sql uploaded successfully.
-2024-10-30 17:26:24 - INFO - [chan 0] sftp session closed.
